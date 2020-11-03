@@ -10,26 +10,20 @@ docker exec -it mysql mysql -uroot -proot -e 'CREATE DATABASE todolist'
 docker exec -it mysql mysql -uroot -proot
 ```
 
-```mysql
+```sql
 # MySQL commands
 show databases;
 show tables;
 desc todo_item_models;
 ```
 
-# Start todolist
-
 ```shell
+# Start todolist
 go run todolist.go
-```
 
 # Build todolist-mysql-go package
-
-```shell
 go build
-```
 
 # Start todolist-mysql-go app
-```shell
 ./todolist-mysql-go
 ```
